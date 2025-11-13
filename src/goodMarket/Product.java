@@ -10,7 +10,4 @@ public abstract class Product {
     protected LocalDate pickingDate;
     protected  int shelfLifeDays;
 
-    protected abstract LocalDate calculateExpirationDate();
-
-
 }
