@@ -10,6 +10,15 @@ public abstract class Product {
     protected LocalDate pickingDate;
     protected  int shelfLifeDays;
 
+    protected Product(String name, double unitPrice, String unit, double stockQuantity, LocalDate pickingDate, int shelfLifeDays) {
+        this.name = name;
+        this.unitPrice = unitPrice;
+        this.unit = unit;
+        this.stockQuantity = stockQuantity;
+        this.pickingDate = pickingDate;
+        this.shelfLifeDays = shelfLifeDays;
+    }
+
     public String getName() {
         return name;
     }
