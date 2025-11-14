@@ -66,4 +66,12 @@ public abstract class Product {
     public void setShelfLifeDays(int shelfLifeDays) {
         this.shelfLifeDays = shelfLifeDays;
     }
+
+  /**
+   * Met à jour le stock du produit
+   * @param offset montant positif ou negatif de la mise à jour
+   */
+    public void  updateStock(double offset){
+      this.stockQuantity = this.stockQuantity + offset;
+    }
 }
